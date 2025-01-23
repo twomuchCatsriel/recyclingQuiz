@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+
+<head>
+    <meta cha rset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/recycling-304974_1280_png.png">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>The Recycling Game</title>
+</head>
+
+<body>
+    <h1>Resirkulering!</h1>
+    
+    <section id="quizSect">
+        <img id="image">
+        <p id="correctField">question goes here</p>
+    
+        <div class="inline">
+            <button id="a" class="buttons">empty</button>
+            <button id="b" class="buttons">empty</button>
+            <button id="c" class="buttons">empty</button>
+            <button id="d" class="buttons">empty</button> 
+        </div>
+        <div class="inline">
+            <button id="next">Neste</button>
+        </div>
+    
+        <p id="correctText">  Riktig! Trykk på "Neste" for å gå til neste spørsmål! </p> 
+        <p id="incorrectText"> Dette var ikke helt riktig. Bedre lykke neste gang! </p>
+       
+        <p>Runde: <span id="roundfield">0</span>/20</p>
+        <p>Score: <span id="pointsField">0</span>/20</p>
+        <p>Streak: <span id="streakField">0</span></p>
+        
+        <div id="startInactive">
+            <p id="yes">Tips: <span id="tipfield"></span></p>
+        </div>
+    
+
+    </section> 
+        
+    <section id="resultSect">
+        <h1>Resultater</h1>
+        <p>Totalt Riktig: <span id="rightf"></span>/20</p>
+        <p>Totalt Feil: <span id="wrongf"></span>/20</p>
+        <p>Høyest Streak: <span id="streakrec"></span></p>
+        <p>Siste Streak: <span id="endstreak"></span></p>
+        <button id="restart"> Prøv Igjen!</button>
+    </section>
+    
+    <script src="js/questions.js"></script>
+    <script src="js/main.js"></script>
+</body>

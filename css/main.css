@@ -1,0 +1,107 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-image: url(../img/sirkula.png);
+    color: white;
+}
+
+img{
+    height: 200px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+button{
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.startInactive{
+    margin-top: 5%;
+}
+
+#next{
+    margin-top: 2%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#a{
+    background-color: #00b259;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+#b{
+    background-color: #913493;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+#c{
+    background-color: #0085c2;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+#d{
+    background-color: #566d79;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+#correctText{
+    display: none;
+    color: lime;
+    font-weight: bold;
+}
+
+#incorrectText{
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+#resultSect{
+    display: none;
+}
+
+#rightf{
+    color: lime;
+    font-weight: bold;    
+}
+
+#wrongf{
+    color: red;
+    font-weight: bold;
+}
+
+#endstreak{
+    color: orange;
+    font-weight: bold;
+}
+
+#yes{
+    font-weight: bold;
+    color: lightgreen;
+}
+
+#streakrec{
+    color: orange;
+    font-weight: bold;
+}
+
+#playbutton{
+    background-color: white;
+    color: black;
+    padding: 10px 16px;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-top: 10%;
+}
