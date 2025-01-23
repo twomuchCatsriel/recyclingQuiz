@@ -24,6 +24,12 @@ const endstreak = document.getElementById("endstreak");
 
 const restart = document.getElementById("restart");
 
+// audios
+const snd_5_right = document.getElementById("snd_5_right");
+const snd_10_right = document.getElementById("snd_10_right");
+const snd_15_right = document.getElementById("snd_15_right");
+const snd_all_right = document.getElementById("snd_all_right");
+
 // global keywords
 let currentRound = 0;
 let points = 0;
@@ -93,6 +99,23 @@ function setQuestion(rn){
         endstreak.innerHTML = streak;
 
         resultSect.style.display = "inline";
+
+        if((20-incorrectTally) <= 5){
+            snd_5_right.play();
+            console.log("less than 5 right")
+        } 
+        else if((20-incorrectTally) <= 15){
+            snd_10_right.play();
+            console.log("less than 15 right")
+        }
+        else if((20-incorrectTally) < 20){
+            snd_15_right.play();
+            console.log("less than 20 right")
+        }
+        else if((20-incorrectTally) <= 20){
+            snd_all_right.play();
+            console.log("nice");
+        }
     }
     
 }
